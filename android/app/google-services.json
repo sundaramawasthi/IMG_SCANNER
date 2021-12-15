@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "190168663448",
+    "project_id": "image-9cbc8",
+    "storage_bucket": "image-9cbc8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190168663448:android:66e5be9df3c6e4e22c97ed",
+        "android_client_info": {
+          "package_name": "com.example.img_converter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190168663448-ve5s3bvdlqg5ocau607j1e0tvg0i66dj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIDzK8Fz-FaZjMlYcnT0QH8pD3kWvhWvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190168663448-ve5s3bvdlqg5ocau607j1e0tvg0i66dj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
