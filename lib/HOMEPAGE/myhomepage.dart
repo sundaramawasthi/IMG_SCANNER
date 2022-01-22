@@ -4,6 +4,8 @@ import 'package:img_converter/ABOUT/about.dart';
 import 'package:img_converter/CODE/generate.dart';
 import 'package:img_converter/CODE/home_page.dart';
 import 'package:img_converter/CODE/scan.dart';
+import 'package:img_converter/Language_Converter/homescreen.dart';
+import '../Dictinary.dart';
 import '../splash_screen.dart';
 import 'icon_button.dart';
 import 'info.dart';
@@ -15,12 +17,12 @@ class MyHomePage extends StatelessWidget {
       resizeToAvoidBottomInset: false,
       backgroundColor: Color(0xFF363567),
       bottomNavigationBar: Container(
-        height: 71,
+        height: 61,
         width: double.infinity,
-        padding: EdgeInsets.all(3),
+        padding: EdgeInsets.all(4),
         color: Color(0xFF373856),
         child: Padding(
-          padding: const EdgeInsets.only(bottom: 8),
+          padding: const EdgeInsets.only(bottom: 3),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -33,8 +35,8 @@ class MyHomePage extends StatelessWidget {
                 },
                 child: Image.asset(
                   'assets/logo.png',
-                  height: 60,
-                  width: 60,
+                  height: 40,
+                  width: 40,
                 ),
               ), //MOVE TO SPLASH SCEEN
               ElevatedButton(
@@ -47,8 +49,8 @@ class MyHomePage extends StatelessWidget {
                 },
                 child: Image.asset(
                   'assets/scan.png',
-                  height: 60,
-                  width: 60,
+                  height: 40,
+                  width: 40,
                 ),
               ), // MOVR TO SCANNER MENU
               ElevatedButton(
@@ -58,8 +60,8 @@ class MyHomePage extends StatelessWidget {
                 },
                 child: Image.asset(
                   'assets/info.png',
-                  height: 60,
-                  width: 60,
+                  height: 40,
+                  width: 40,
                 ),
               ), // MOVE TO IFO PAGE
             ],
@@ -90,27 +92,27 @@ class MyHomePage extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 70),
+                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
+                    const Text(
                       'IMG_SCANNER',
                       style: TextStyle(
                         color: Colors.white,
-                        fontSize: 30,
+                        fontSize: 35,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     SizedBox(
                       height: 40,
                     ),
-                    Text(
+                    const Text(
                       'CLASSIFY THIS IMG_SCANNER INTO A \n PARTICULAR CATEGORY ',
                       style: TextStyle(color: Colors.white, fontSize: 16),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(top: 76),
+                      padding: EdgeInsets.only(top: 16),
                       child: Column(
                         children: [
                           Row(
@@ -130,9 +132,6 @@ class MyHomePage extends StatelessWidget {
                                   color: Color(0xFF47B4FF),
                                 ),
                               ), // MOVE TO SPLASHSCREEN
-                              SizedBox(
-                                height: 20,
-                              ),
                               GestureDetector(
                                 onTap: () {
                                   Navigator.push(
@@ -149,9 +148,6 @@ class MyHomePage extends StatelessWidget {
                               ), // MOVE TO GENERATOR
                             ],
                           ),
-                          SizedBox(
-                            height: 30,
-                          ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
@@ -165,6 +161,38 @@ class MyHomePage extends StatelessWidget {
                                 child: CatigoryW(
                                   image: 'assets/scan.png',
                                   text: 'QR-SCANNER',
+                                  color: Color(0xFF7DA4FF),
+                                ),
+                              ), // MOVE TO SCANNER
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => language()),
+                                  );
+                                },
+                                child: CatigoryW(
+                                  image: 'assets/trans.png',
+                                  text: 'LANG-CONVERTER',
+                                  color: Color(0xFF43DC64),
+                                ),
+                              ), //MOVE  ABOUT US PAGE
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              GestureDetector(
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => DIctinary()));
+                                },
+                                child: CatigoryW(
+                                  image: 'assets/dict.jpg',
+                                  text: 'DICTONARY APP',
                                   color: Color(0xFF7DA4FF),
                                 ),
                               ), // MOVE TO SCANNER

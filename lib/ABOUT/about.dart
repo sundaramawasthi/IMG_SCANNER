@@ -18,7 +18,7 @@ class about extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment
                 .center, // USE MAXAXISALIGNMENT TOO ADD A CENTER
-            children: [
+            children: const [
               CircleAvatar(
                 radius: 50.0,
                 backgroundImage: AssetImage(
@@ -47,27 +47,6 @@ class about extends StatelessWidget {
                 width: 150.0,
                 child: Divider(color: Colors.black),
               ),
-              // Card(
-              //   // USE OF CARD WIDGETS TO CREATE A CARD
-              //   color: Colors.blue,
-              //   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-              //   child: ListTile(
-              //     leading: Icon(
-              //       // USE  OF LEADING TO ADD A ICONS
-              //       Icons.linkedin,
-              //       color: Colors.black,
-              //     ),
-              //     title: Text(
-              //       // USE TITILE TO SHOW THE TITLE
-              //       '  +91 234 567 89 ',
-              //       style: TextStyle(
-              //         fontSize: 15,
-              //         letterSpacing:
-              //             5, // LETTERSPACING TO SPACE BETWEEN THE WORD
-              //       ),
-              //     ),
-              //   ),
-              // ),
               Card(
                 color: Colors.blue,
                 margin: EdgeInsets.symmetric(vertical: 9, horizontal: 30.0),

@@ -46,6 +46,9 @@ dependencies:
   #barcode_scan: ^2.0.1
   plugin_platform_interface: ^2.0.2
   #flutter_barcode_scanner: ^2.0.0
+  http: any
+  translator: ^0.1.7
+  flutter_tts: ^3.1.0
 
 dev_dependencies:
   flutter_test:
